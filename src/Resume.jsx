@@ -6,12 +6,14 @@ import "./Resume.css";
 const Resume = forwardRef((_, ref) => {
   return (
     <div className="page" ref={ref}>
-      <Grid container columnSpacing={4}>
+      <Grid container rowSpacing={2} columnSpacing={4}>
+        <Grid item xs={12}>
+          <Box>
+            <Typography variant="h1">susie son</Typography>
+          </Box>
+        </Grid>
         <Grid item xs={12} sm="auto">
           <Stack spacing={2}>
-            <Box>
-              <Typography variant="h1">susie son</Typography>
-            </Box>
             <Box>
               <Stack>
                 <Stack direction="row" spacing={1}>
@@ -70,7 +72,7 @@ const Resume = forwardRef((_, ref) => {
         </Grid>
 
         <Grid item xs={12} sm={8}>
-          <Box mt={{ xs: 0, sm: 9 }}>
+          <Box>
             <Typography variant="h2">work</Typography>
             <Stack spacing={2}>
               <Box>
