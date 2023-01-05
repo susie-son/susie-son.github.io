@@ -37,27 +37,28 @@ const App = () => {
         color: "#939adf"
       },
       subtitle1: {
-        fontSize: "10pt",
+        fontSize: "11pt",
         lineHeight: 1.5,
         fontWeight: 500,
       },
       subtitle2: {
-        fontSize: "10pt",
+        fontSize: "11pt",
         lineHeight: 1.5,
         fontWeight: 400,
       },
       overline: {
-        fontSize: "10pt",
+        fontSize: "11pt",
         lineHeight: 1.5,
         letterSpacing: "0.00938em",
         textTransform: "none",
         fontWeight: 300,
       },
       body1: {
-        fontSize: "10pt",
+        fontSize: "11pt",
         fontWeight: 400
       },
       caption: {
+        fontSize: "11pt",
         fontWeight: 300,
       }
     }
