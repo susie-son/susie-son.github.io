@@ -7,7 +7,7 @@ const Resume = forwardRef((_, ref) => {
   return (
     <div className="page" ref={ref}>
       <Grid container columnSpacing={4}>
-        <Grid item xs={12} md="auto">
+        <Grid item xs={12} sm="auto">
           <Stack spacing={2}>
             <Box>
               <Typography variant="h1">susie son</Typography>
@@ -69,8 +69,8 @@ const Resume = forwardRef((_, ref) => {
           </Stack>
         </Grid>
 
-        <Grid item xs={12} md={8}>
-          <Box mt={{ xs: 0, md: 9 }}>
+        <Grid item xs={12} sm={8}>
+          <Box mt={{ xs: 0, sm: 9 }}>
             <Typography variant="h2">work</Typography>
             <Stack spacing={2}>
               <Box>
