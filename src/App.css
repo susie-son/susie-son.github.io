@@ -1,9 +1,9 @@
 @media print {
-    @page {
-        margin: 0;
-    }
+  @page {
+    margin: 0;
+  }
 
-    #fab {
-        display: none;
-    }
+  #fab {
+    display: none;
+  }
 }
