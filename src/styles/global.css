@@ -1,3 +1,4 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,22 +8,30 @@
 	:root[data-theme="light"] {
 		color-scheme: light;
 		/* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
-		--theme-bg: 220deg 23% 95%;
-		--theme-link: 11deg 59% 67%;
-		--theme-text: 234deg 16% 35%;
-		--theme-accent: 231deg 97% 72%;
-		--theme-accent-2: 233deg 13% 41%;
-		--theme-quote: 220deg 91% 54%;
+		--theme-bg: var(--ctp-latte-base-hsl);
+		--theme-text: var(--ctp-latte-text-hsl);
+		--theme-subtext: var(--ctp-latte-subtext1-hsl);
+		--theme-subtle: var(--ctp-latte-surface0-hsl);
+		--theme-accent: var(--ctp-latte-sapphire-hsl);
+		--theme-accent-2: var(--ctp-latte-lavender-hsl);
+		--theme-link: var(--ctp-latte-peach-hsl);
+		--theme-tag: var(--ctp-latte-subtext0-hsl);
+		--theme-warning: var(--ctp-latte-yellow-hsl);
+		--theme-ring: var(--ctp-latte-sapphire-hsl);
 	}
 
 	:root[data-theme="dark"] {
 		color-scheme: dark;
-		--theme-bg: 232deg 23% 18%;
-		--theme-link: 10deg 58% 90%;
-		--theme-text: 227deg 68% 88%;
-		--theme-accent: 234deg 82, 85%;
-		--theme-accent-2: 228deg 39% 80%;
-		--theme-quote: 220deg 83% 75%;
+		--theme-bg: var(--ctp-mocha-base-hsl);
+		--theme-text: var(--ctp-mocha-text-hsl);
+		--theme-subtext: var(--ctp-mocha-subtext1-hsl);
+		--theme-subtle: var(--ctp-mocha-surface0-hsl);
+		--theme-accent: var(--ctp-mocha-sapphire-hsl);
+		--theme-accent-2: var(--ctp-mocha-lavender-hsl);
+		--theme-link: var(--ctp-mocha-peach-hsl);
+		--theme-tag: var(--ctp-mocha-subtext0-hsl);
+		--theme-warning: var(--ctp-mocha-yellow-hsl);
+		--theme-ring: var(--ctp-mocha-sapphire-hsl);
 	}
 
 	html {
@@ -30,6 +39,6 @@
 	}
 
 	body {
-		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-16 text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-background px-8 pt-16 text-sm font-normal text-text antialiased;
 	}
 }

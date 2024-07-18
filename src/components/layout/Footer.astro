@@ -13,11 +13,11 @@ const year = new Date().getFullYear();
 	</div>
 	<nav
 		aria-label="More on this site"
-		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
+		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-subtle"
 	>
 		{
 			menuLinks.map((link) => (
-				<a class="px-4 py-2 sm:py-0 sm:hover:text-textColor sm:hover:underline" href={link.path}>
+				<a class="px-4 py-2 sm:py-0 sm:hover:text-subtext sm:hover:underline" href={link.path}>
 					{link.title}
 				</a>
 			))

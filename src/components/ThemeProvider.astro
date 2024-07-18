@@ -24,8 +24,8 @@
 		root.setAttribute("data-theme", newTheme);
 
 		const colorThemeMetaTag = document.querySelector("meta[name='theme-color']");
-		const bgColour = getComputedStyle(document.body).getPropertyValue("--theme-bg");
-		colorThemeMetaTag.setAttribute("content", `hsl(${bgColour})`);
+		const backgroundColor = getComputedStyle(document.body).getPropertyValue("--theme-background");
+		colorThemeMetaTag.setAttribute("content", `hsl(${backgroundColor})`);
 		if (typeof localStorage !== "undefined") {
 			localStorage.setItem("theme", newTheme);
 		}
