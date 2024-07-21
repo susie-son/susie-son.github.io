@@ -6,37 +6,9 @@ import ThemeToggle from "../ThemeToggle.astro";
 const url = new URL(Astro.request.url);
 ---
 
-<header class="group relative mb-28 flex items-center sm:ps-[4.5rem]" id="main-header">
+<header class="group relative mb-28 flex items-center" id="main-header">
 	<div class="flex sm:flex-col">
-		<a
-			aria-current={url.pathname === "/" ? "page" : false}
-			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
-			href="/"
-		>
-			<svg
-				aria-hidden="true"
-				class="me-3 h-12 w-12 sm:absolute sm:start-[-6.5rem] sm:top-[-1rem] sm:h-28 sm:w-28"
-				fill="none"
-				focusable="false"
-				viewBox="0 0 512 512"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<title>Logo</title>
-				<path d="m256 243.58s-11.493-68.956-85.333-56.889c0 0 10.055 62.922 85.333 56.889z" fill="#90DFAA"/>
-				<path d="m260.74 219.67s10.216-61.295 75.852-50.567c0 0-8.939 55.93-75.852 50.567z" fill="#7CCE93"/>
-				<rect x="248.24" y="142.22" width="15.515" height="170.67" fill="#2C9984"/>
-				<rect x="255.43" y="142.22" width="8.332" height="170.67" fill="#258472"/>
-				<path d="m195.66 110.93c0-16.662 13.507-30.168 30.168-30.168 16.662 0 30.168 13.507 30.168 30.168 0-16.662 13.507-30.168 30.168-30.168 16.662 0 30.168 13.507 30.168 30.168 0 28.848-60.337 63.354-60.337 63.354s-60.335-32.88-60.335-63.354z" fill="#F1543F"/>
-				<path d="m286.17 80.765c-16.662 0-30.168 13.507-30.168 30.168 0-1.995-0.205-3.939-0.574-5.825v68.86c0.359 0.2 0.574 0.319 0.574 0.319s60.337-34.506 60.337-63.354c0-16.661-13.507-30.168-30.169-30.168z" fill="#C1321F"/>
-				<polygon points="318.64 421.5 193.36 421.5 162.05 293.93 349.95 293.93" fill="#B97850"/>
-				<g fill="#935635">
-					<polygon points="349.95 293.93 255.43 293.93 255.43 421.5 318.64 421.5"/>
-					<rect x="156.44" y="256" width="199.11" height="56.889"/>
-				</g>
-				<rect x="255.43" y="256" width="100.12" height="56.889" fill="#804000"/>
-			</svg>
-			<span class="text-xl font-bold sm:text-2xl">Susie Son</span>
-		</a>
+		<span class="text-2xl font-bold">Susie Son</span>
 		<nav
 			aria-label="Main menu"
 			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-background/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-subtle sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
